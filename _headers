@@ -1,0 +1,10 @@
+# Netlify / Cloudflare Pages: evita que el hosting entregue versiones viejas del service worker y del HTML
+/service-worker.js
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache
+/
+  Cache-Control: no-cache
+/manifest.webmanifest
+  Content-Type: application/manifest+json
+  Cache-Control: no-cache
